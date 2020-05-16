@@ -1,0 +1,62 @@
+Introduction & Problem Area
+The problem area that is being examined is crime data that is located in Los Angeles. Crime is an important topic for all cities as it is always on-going. One would want to keep crime at a  minimum, although it is not always possible. The use of data analysis on crime data would be able to deploy an increase of  officer patrols to high risk areas. 
+
+The importance of keeping crime data logged and stored is  that you can track past crimes; and convict people for crimes if they were missing or the case could go cold. The use of data analysis can always be useful in the situation of cold cases if the modus operandi is very much similar you can compare cases  in the hopes of catching the criminals. 
+Project Plan 
+Initial project plan would be to use R programming language and insert the data into Rstudio, sorting this information by date. Therefore, it would be in a clear format to read, before starting to obtain  visualisation of the data or looking into association rules of my dataset to see if one type of crime would influence another in the same area. 
+
+The crime data of Los Angeles is downloaded from Kaggle.com. It was  generated from real data between the years of 2010 and 2017.  I will be using main variables of dates, crimes committed and area name within area districts in attempt to get a pattern determining  if there are  increases of crimes in certain regions of Los Angeles. 
+
+I would look through different computational methods such as neural nets, association rules, decision trees and perhaps more to see if there are trends within the crime in Los Angeles dataset. Parsing through the dataset, one would be able to see differences between dangerous crimes and  non-dangerous crimes. 
+Data Plan
+Data Types
+Considering this dataset I would look to find a variety of data types which include strings, time series and numeric values. As my dataset would be on crime data within Los Angeles,  this sort of data types would exist because  when a crime is reported for the time series, how many times this crime was reported and the crime code for the numeric values. While the string values would be the type of crime, for example theft or hijacking. 
+
+Data Management
+The dataset I would be using would be saved in comma-separated values (.csv) format as it is a straightforward format to use coupled with the R programming language. This data format is often smaller which allows it to be moved easily between different systems as well of managing this type of data. 
+
+Furthermore, as I am undertaking this as an assignment and I do not have access or knowledge to use software for big data such as Google BigQuery and their machine learning datasets, this is preferable to use a smaller dataset for a hardware that is more regularly available. 
+Computational Methods
+For the decision rules I would be looking to use a variety of decision trees, random forest, association rules and neural nets.  Each of these methods can produce value information for different areas of work. 
+
+As Los Angeles is a large area another question to look for in the data would be which areas have the most and least amount of crime. As one would expect the richer parts of the city would have a lesser amount of crime.  Although this may not always be the case, so what one would expect from a dataset and the outcome would be different. 
+ 
+Association rules
+In my crime dataset I could hope to see a form of association rules. In the case of vandalism, - then there should be no weapon involved., This could be like the diapers and beer during evenings association in Walmart data analysis. However, with this type of association there could be a negative impact as vandalism involving spray cans can also be used as weapons. 
+
+Using association rules in a big impact could be expensive and not as efficient. However, as seen in Association Rules Mining (pg 73) the cost can be reduced “by reducing the number of passes over the database, by sampling the database, by adding extra constraints on the structure of patterns and through parallelization.” Now as my dataset is small the cost would not be as high. On the other hand the use of crime data, I would not think you could sample the database unless you are sampling from a specific area of the city that the database is located in. 
+Classification
+Classification is when you categorize your data, these classifiers would have a percentage of accuracy. Therefore, you would require a false negative and false positive to get a better accuracy of data. If some classes are imbalanced depending on the type of data it may cause issues with classifying the dataset. However for a crime dataset  you would likely have imbalances.
+
+As seen in Liu et al. (1997), “For example, in a loan application domain, we may have the following four T1s at level 1: (1) saving > approved, (2) age | {approved, not_approved}, (3) jobless {no} approved, (4) jobless {yes} not_approved “. This displays that in the loan application example people would  be classified if they have savings, their age and depending on their job whether if they would be approved for a job or not. A similar example is shown in Weixing Zhang et al. (2017) for Google Street View where the computer system uses training sets of random seeds after the image data was converted into a csv table to more accurately process the image data. 
+
+Representation for a crime dataset if following the EU guidelines; different crimes and levels of crime are categorized differently. This is so that crimes would be easier to identify and analyse at a later date depending on the severity of the crime. After seeing the example in Liu et al., for a crime dataset you would be required to have many more classified to judge for a crime or not. Comparatively for a criminal to steal a car via hotwiring, the criminal would be required to know how to hotwire a car, how to break into a car. This is  likely not to  be  a wheelchair user due to the fact that being in a wheelchair and getting into a car is more difficult and likely to  be noticed more easily. 
+ 
+Decision trees
+In relation to crime dataset a decision tree could be utilised by gathering past crimes and seeing if crimes would be committed due to the historic activities. This would be similar to neural networks of data. With decision trees it would  step though  similar to a flowchart  to check ’yes or no’ if it had  happened before. 
+
+Although in Bayesian Data Analysis book (Chapter 9: Decision Analysis page 238), “In a business context, x might be dollars; in a medical context, lives or life-years. More generally, outcomes can have multiple attributes and would be expressed as vectors.” This proves that the outcomes of a decision tree can lead to different answers depending on the questions asked. Therefore, decision trees giving different answers depending on the type of   questions that can be used for many situations on the same dataset. 
+
+In reality this would likely not be the best optimal method to use for this dataset but you could use it to check if it is a criminals modus operandi, if it is in a similar area and type of victims. The decision tree could be used for cold cases in this way, prompting questions of ‘yes and no’ questions. 
+Neural Nets
+If we wish to attempt to predict where another crime could be committed we could use some of this data into a training set with neural nets. It could be possible to predict crime, however the accuracy of predicting someone committing a crime in the area and that sort of crime is a high risk and low probability. This is due to the fact this process would be time consuming and money could be wasted on building the neural net to predict this. 
+
+However, neural nets may not be the best method to use when in a crime dataset as you can train the dataset with a percent of the data but it may not able to predict correct information with a dataset this small that I would be using. In theory, predicting crime using bigger datasets with machine learning and neural networks would work in the real world. After all more work would need to be completed to make the process accurate enough to be used successfully.
+
+The figure below works for both neural net methods of radial basis function networks and multi-layer perceptron networks. However, the radial basis function networks are newer and can run at a faster rate. 
+
+
+Figure 1: Multi-Layer Perceptron Neural Network
+Discoveries
+Patterns Detection
+ I would hope to publish this data into many scatter plots by date and the crime. This would result in being able to see if there are trends in the dataset, which type of crime is the most common committed within the seven years of data.  These trends and patterns in the dataset would be visible when showing it in graphic formats would be able to produce a colourful graph with legends so that it would be able to be  understood without understanding 
+
+After the datasets have been visualised, one can see if there are clustering of the data. Which  helps to work out the trends of the data. This clustering of data points would be valuable to see in circumstances when there is a local mayor election or a national wide elections during the time series data which correlates to the clustering of crimes committed. 
+
+By looking at this type of data, it would display that if it is random that crimes are being committed or if certain crimes are seasonal or linked towards what is happening in the current country and area from where the dataset is located. 
+
+ If we can detect that it is being seasonal such as during Christmas periods, Halloween or in America during their ‘spring break’. This would help to gather resources of increase of security guards and patrols during this time and in the high risk areas. Of course these areas which may be classified as high risk can change so targeting this type of data would need to always be observing. 
+
+Detecting if a pattern is interesting in this field.   If the modus operandi is unusual  for  the criminal or if it seems to target attacks in this region.   We can use computation method such as association rules for pattern discovery, this was discussed above in the computation method section. As seen in Subasish Das et al. 2018 “Frequent pattern mining (FPM) and association rules are powerful machine learning tools to identify the relationship between different factors.” This shows that pattern mining and association rules work in combination. 
+Lifecycle
+The lifecycle of the data mining process referenced to as Knowledge Discovery in Databases (KDD) originates  from having the data to knowledge of the data. During the life cycle there are five main steps before the knowledge can actually be extracted from the data. The following are steps of the life cycle; selection, preprocessed then transformed into readable data before it can be data mined. After it has been determined it would then be evaluated for the knowledge. This is clearly shown in Figure 1, how data is manipulated through the knowledge discovery in database process. It has been found to be extremely useful as during the evaluation the data can be selected again to be processed for another task as well as being used for knowledge of the data. 
